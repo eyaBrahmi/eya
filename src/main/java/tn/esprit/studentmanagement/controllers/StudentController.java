@@ -21,7 +21,7 @@ IStudentService studentService;
     @GetMapping("/getStudent/{id}")
     public Student getStudent(@PathVariable Long id) { return studentService.getStudentById(id); }
 
-    @PostMapping("/createStudent")
+    @PostMapping("/addStudent")
     public Student createStudent(@RequestBody Student student) { return studentService.saveStudent(student); }
 
     @PutMapping("/updateStudent")
